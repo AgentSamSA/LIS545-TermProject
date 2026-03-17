@@ -1,119 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:dc="http://purl.org/dc/elements/1.1/"
-          xmlns:dcterms="http://purl.org/dc/terms/"
-          xmlns:datacite="http://datacite.org/schema/kernel-4"
-          xsi:schemaLocation="
-            http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.4/metadata.xsd
-            http://purl.org/dc/elements/1.1/ http://dublincore.org/schemas/xmls/simpledc20021212.xsd
-            http://purl.org/dc/terms/ http://dublincore.org/schemas/xmls/2008/02/11/dcterms.xsd">
+<resource xmlns="http://datacite.org/schema/kernel-4"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://datacite.org/schema/kernel-4
+          http://schema.datacite.org/meta/kernel-4.6/metadata.xsd">
 
-  <!-- ===== Core Identification ===== -->
-  <dc:title>2022 Russia Ukraine War, Losses, Oryx + Images</dc:title>
-  <dc:type>Dataset</dc:type>
-  <datacite:version>1.0.0</datacite:version>
+  <!-- Identifier -->
+  <identifier identifierType="DOI">10.0000/ukraine-russia-equipment-losses</identifier>
 
-  <!-- A short human-readable abstract/description -->
-  <dc:description>
-    Open-source intelligence (OSINT) compilation of visually confirmed equipment losses
-    related to the 2022 Russia–Ukraine war, derived from Oryx reporting and augmented
-    with image-based entries. Includes per-side tallies, categories (e.g., armor,
-    artillery, aircraft), and a separate image metadata table. Intended for research,
-    journalism, and non-commercial analysis.
-  </dc:description>
+  <!-- Creators -->
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Ivaniuk, Petro</creatorName>
+      <nameIdentifier nameIdentifierScheme="Kaggle" schemeURI="https://www.kaggle.com/">piterfm</nameIdentifier>
+    </creator>
+  </creators>
 
-  <!-- ===== Creators & Contributors ===== -->
-  <datacite:creators>
-    <datacite:creator>
-      <datacite:creatorName>Ivaniuk, Petro</datacite:creatorName>
-      <datacite:nameIdentifier nameIdentifierScheme="Kaggle" schemeURI="https://www.kaggle.com/">piterfm</datacite:nameIdentifier>
-      <!-- TODO: Add ORCID if available -->
-    </datacite:creator>
-  </datacite:creators>
+  <!-- Contributors -->
+  <contributors>
+    <contributor contributorType="HostingInstitution">
+      <contributorName>Kaggle</contributorName>
+    </contributor>
+    <contributor contributorType="DataCurator">
+      <contributorName>Oryx OSINT Project</contributorName>
+    </contributor>
+  </contributors>
 
-  <!-- ===== Publisher / Hosting ===== -->
-  <dc:publisher>Kaggle</dc:publisher>
-  <dcterms:isHostedBy>Petro Ivaniuk (Kaggle: piterfm)</dcterms:isHostedBy>
-  <dcterms:identifier xsi:type="dcterms:URI">https://www.kaggle.com/datasets/piterfm/2022-ukraine-russia-war-equipment-losses-oryx</dcterms:identifier>
+  <!-- Titles -->
+  <titles>
+    <title>2022 Russia Ukraine War, Losses, Oryx + Images</title>
+  </titles>
 
-  <!-- ===== Dates ===== -->
-  <dcterms:issued>2022</dcterms:issued>
-  <!-- If you want a precise publication date, replace with YYYY-MM-DD -->
-  <dcterms:modified>LAST_UPDATE_8_MONTHS_AGO</dcterms:modified>
-  <!-- Tip: replace with an ISO date like 2025-06-27 if “8 months ago” relative to today equals June 27, 2025. -->
+  <!-- Publisher -->
+  <publisher>Kaggle</publisher>
 
-  <!-- ===== Subjects / Keywords ===== -->
-  <dc:subject>war</dc:subject>
-  <dc:subject>ukraine</dc:subject>
-  <dc:subject>russia</dc:subject>
-  <dc:subject>OSINT</dc:subject>
-  <dc:subject>oryx</dc:subject>
-  <dc:subject>armor</dc:subject>
-  <dc:subject>losses</dc:subject>
+  <!-- Publication Year -->
+  <publicationYear>2022</publicationYear>
 
-  <!-- ===== Rights & License ===== -->
-  <dc:rights>CC BY-NC-SA 4.0</dc:rights>
-  <dcterms:license xsi:type="dcterms:URI">https://creativecommons.org/licenses/by-nc-sa/4.0/</dcterms:license>
+  <!-- Resource Type -->
+  <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
 
-  <!-- ===== Language ===== -->
-  <dc:language>en</dc:language>
+  <!-- Version -->
+  <version>1.0.0</version>
 
-  <!-- ===== Related Identifiers ===== -->
-  <dcterms:source>Oryx visually confirmed equipment losses (OSINT)</dcterms:source>
-  <!-- TODO: Add a URL to Oryx methodology or snapshot if you want a resolvable reference -->
+  <!-- Subjects -->
+  <subjects>
+    <subject>War</subject>
+    <subject>Ukraine</subject>
+    <subject>Russia</subject>
+    <subject>OSINT</subject>
+    <subject>Military equipment losses</subject>
+    <subject>Armor</subject>
+    <subject>Open source intelligence</subject>
+  </subjects>
 
-  <!-- ===== Distributions (Files) ===== -->
-  <dcterms:hasPart>
-    <dcterms:BibliographicResource>
-      <dc:title>losses_ukraine.csv</dc:title>
-      <dcterms:format>text/csv</dcterms:format>
-      <dcterms:description>Per-item losses for Ukraine; structured by category and status.</dcterms:description>
-      <!-- TODO: Add file size and checksum if desired -->
-    </dcterms:BibliographicResource>
-  </dcterms:hasPart>
+  <!-- Descriptions -->
+  <descriptions>
 
-  <dcterms:hasPart>
-    <dcterms:BibliographicResource>
-      <dc:title>losses_russia.csv</dc:title>
-      <dcterms:format>text/csv</dcterms:format>
-      <dcterms:description>Per-item losses for Russia; structured by category and status.</dcterms:description>
-    </dcterms:BibliographicResource>
-  </dcterms:hasPart>
+    <description descriptionType="Abstract">
+      Open-source intelligence (OSINT) compilation of visually confirmed equipment
+      losses related to the 2022 Russia–Ukraine war, derived from Oryx reporting
+      and augmented with image-based entries. The dataset contains categorized
+      records of destroyed, damaged, abandoned, and captured military equipment
+      for both Russia and Ukraine. The dataset also includes metadata referencing
+      images documenting these losses.
+    </description>
 
-  <dcterms:hasPart>
-    <dcterms:BibliographicResource>
-      <dc:title>img_losses_metadata_ukraine.csv</dc:title>
-      <dcterms:format>text/csv</dcterms:format>
-      <dcterms:description>Image metadata and references associated with visually confirmed losses for Ukraine.</dcterms:description>
-    </dcterms:BibliographicResource>
-  </dcterms:hasPart>
+    <description descriptionType="Methods">
+      Data compiled from publicly available imagery and OSINT reports.
+      Entries reflect visually confirmed equipment status at the time
+      the evidence was documented. Records are cross-checked against
+      the Oryx visually confirmed equipment losses database.
+    </description>
 
-  <dcterms:hasPart>
-    <dcterms:BibliographicResource>
-      <dc:title>img_losses_metadata_russia.csv</dc:title>
-      <dcterms:format>text/csv</dcterms:format>
-      <dcterms:description>Image metadata and references associated with visually confirmed losses for Russia.</dcterms:description>
-      <!-- Optionally add: <dcterms:identifier>relative/or/absolute/path</dcterms:identifier> -->
-    </dcterms:BibliographicResource>
-  </dcterms:hasPart>
+    <description descriptionType="TechnicalInfo">
+      Dataset provided as CSV files containing structured equipment
+      loss records and associated image metadata tables.
+    </description>
 
-  <!-- ===== Access & Usage Notes ===== -->
-  <dcterms:accessRights>Open for non-commercial use under CC BY-NC-SA 4.0.</dcterms:accessRights>
-  <dcterms:audience>Researchers; Data journalists; Policy analysts; OSINT practitioners</dcterms:audience>
+  </descriptions>
 
-  <!-- ===== Methodology / Provenance ===== -->
-  <dcterms:provenance>
-    Data compiled from publicly available imagery and reports; entries reflect visually
-    confirmed equipment status at the time of capture. See dataset page for curation workflow.
-  </dcterms:provenance>
+  <!-- Dates -->
+  <dates>
+    <date dateType="Issued">2022</date>
+    <date dateType="Updated">2025</date>
+  </dates>
 
-  <!-- ===== Quality & Versioning ===== -->
-  <dcterms:conformsTo>Community OSINT practices; cross-checked against Oryx listings.</dcterms:conformsTo>
-  <datacite:alternateIdentifiers>
-    <datacite:alternateIdentifier alternateIdentifierType="Repository">Kaggle</datacite:alternateIdentifier>
-  </datacite:alternateIdentifiers>
-  <datacite:rightsList>
-    <datacite:rights rightsURI="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</datacite:rights>
-  </datacite:rightsList>
+  <!-- Language -->
+  <language>en</language>
 
-</Resource>
+  <!-- Geographic coverage -->
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace>Ukraine</geoLocationPlace>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPlace>Russia</geoLocationPlace>
+    </geoLocation>
+  </geoLocations>
+
+  <!-- File formats -->
+  <formats>
+    <format>text/csv</format>
+  </formats>
+
+  <!-- File list -->
+  <sizes>
+    <size>losses_ukraine.csv</size>
+    <size>losses_russia.csv</size>
+    <size>img_losses_metadata_ukraine.csv</size>
+    <size>img_losses_metadata_russia.csv</size>
+  </sizes>
+
+  <!-- Related identifiers -->
+  <relatedIdentifiers>
+
+    <!-- Main dataset page -->
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsReferencedBy">
+      https://www.kaggle.com/datasets/piterfm/2022-ukraine-russia-war-equipment-losses-oryx
+    </relatedIdentifier>
+
+    <!-- Source methodology -->
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsDerivedFrom">
+      https://www.oryxspioenkop.com/
+    </relatedIdentifier>
+
+    <!-- Dataset components -->
+    <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart">
+      losses_ukraine.csv
+    </relatedIdentifier>
+
+    <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart">
+      losses_russia.csv
+    </relatedIdentifier>
+
+    <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart">
+      img_losses_metadata_ukraine.csv
+    </relatedIdentifier>
+
+    <relatedIdentifier relatedIdentifierType="URL" relationType="HasPart">
+      img_losses_metadata_russia.csv
+    </relatedIdentifier>
+
+  </relatedIdentifiers>
+
+  <!-- Rights -->
+  <rightsList>
+    <rights rightsURI="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+      CC BY-NC-SA 4.0
+    </rights>
+  </rightsList>
+
+  <!-- Alternate identifiers -->
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="Repository">
+      Kaggle Dataset
+    </alternateIdentifier>
+  </alternateIdentifiers>
+
+  <!-- Funding (optional placeholder if none known) -->
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Independent OSINT Research</funderName>
+    </fundingReference>
+  </fundingReferences>
+
+</resource>
